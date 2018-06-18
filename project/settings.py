@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+8
 #DEBUG = bool(os.environ.get('DJANGO_DEBUG',True))
 
 #ALLOWED_HOSTS = []
-from .base import 
+
 import dj_database_url
 
 ENVIRONMENT = 'production'
