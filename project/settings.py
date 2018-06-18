@@ -25,18 +25,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+8
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
 
-#DEBUG = bool(os.environ.get('DJANGO_DEBUG',True))
+DEBUG = bool(os.environ.get('DJANGO_DEBUG',True))
 
-#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
-import dj_database_url
-
-ENVIRONMENT = 'production'
-DEBUG = False
-ALLOWED_HOSTS = ['']
-DATABASES['default'] = dj_database_url.config(
-    default='DATABASE_URL_HERE'
-)
 
 # Application definition
 
